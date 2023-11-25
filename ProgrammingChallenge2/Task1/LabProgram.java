@@ -13,7 +13,7 @@ public class LabProgram {
             String filename = scanner.nextLine();
             
             // Modify this method call when testing the search version of readBooks
-            Book[] books = fr.readBooks(filename);
+            Book[] books = fr.readBooks(filename, "an");
 
             for (int i = 0; i < books.length; i++) {
                 System.out.println(books[i]);

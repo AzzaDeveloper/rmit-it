@@ -6,9 +6,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LabProgram",
+            "request": "launch",
+            "mainClass": "Task1.LabProgram",
+            "projectName": "java-projects_6aaaad5"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
-        },
+        }
     ]
 }

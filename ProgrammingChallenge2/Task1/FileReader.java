@@ -40,6 +40,7 @@ public class FileReader {
         //
         Book[] books = new Book[numBooks];
         //
+        int numBooksHasSearch = 0;
         for (int i = 0; i < numBooks; i++) {
             String title = inFs.nextLine();
             String author = inFs.nextLine();
@@ -47,14 +48,11 @@ public class FileReader {
             double price = inFs.nextDouble();
             inFs.nextLine();
             //
+            if (title.contains(searchTerm)) {
+                 numBooksHasSearch++;
+            }
             Book book = new Book(title, author, pages, price);
             books[i] = book;    
-        }
-        int numBooksHasSearch = 0;
-        for (int i = 0; i < numBooks; i++) {
-            if (books[i].getTitle().contains(searchTerm)) {
-                numBooksHasSearch++;
-            }
         }
         Book[] booksWithTitle = new Book[numBooksHasSearch];
         int c = 0;
