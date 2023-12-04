@@ -5,5 +5,9 @@ enum StarRating{
     THREE,
     FOUR,
     FIVE,
-    SIX
+    SIX,
+    SEVEN,
+    EIGHT,
+    NINE,
+    TEN
 }
